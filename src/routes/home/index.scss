@@ -1,0 +1,28 @@
+.home {
+
+  &__slide {
+    position: relative;
+    width: 100%;
+    height: 0;
+    //宽度的40%
+    padding-bottom: 40%;
+  }
+  &__slideWrap {
+    //它是一个有高度的容器，充满slide
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+  &__content {
+    padding: 0 20px;
+    list-style: none;
+    li {
+      list-style: none;
+      &:nth-child(n+2) {
+        border-top: 2px solid #E4E2E2;
+      }
+    }
+  }
+}

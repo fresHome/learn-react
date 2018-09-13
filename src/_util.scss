@@ -1,0 +1,24 @@
+//variable
+
+$black: #000;
+$gray: #777;
+$border: #E4E2E2;
+
+@mixin flex-between {
+  //两端分开
+  display: flex;
+  justify-content: space-between;
+}
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+//靠左从上到下
+@mixin flex-v-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
